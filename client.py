@@ -9,7 +9,7 @@ url = '"'+url+'"'
 submit_button = st.button('Submit')
 
 if submit_button:
-    response = requests.post('https://4467-103-68-38-66.ngrok-free.app/test-it-up', url)
+    response = requests.post('https://d666-103-68-38-66.ngrok-free.app/test-it-up', url)
     if response.status_code == 200:
         data = response.json()
         value = data['Rating'][0][0]
